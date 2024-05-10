@@ -106,7 +106,7 @@ class _IntroPageState extends State<IntroPage> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      //backgroundColor: Colors.grey[300],
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -117,7 +117,7 @@ class _IntroPageState extends State<IntroPage> with SingleTickerProviderStateMix
                 position: _slideAnimationIcon,
                 child: FadeTransition(
                   opacity: _fadeAnimationIcon,
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
@@ -125,8 +125,8 @@ class _IntroPageState extends State<IntroPage> with SingleTickerProviderStateMix
                         color: Colors.black,
                         size: 80,
                       ),
-                      const SizedBox(width: 10),
-                      const Text(
+                      SizedBox(width: 10),
+                      Text(
                         'BroCode',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
